@@ -23,4 +23,4 @@ jobs:
         - name: Lint
           run: |
                 pre-commit install
-                pre-commit run --all-files
+                pre-commit run --all-files --color always
