@@ -67,3 +67,7 @@ docker-compose --version
 docker-compose up --build
 
 ```
+
+- check on container
+```docker-compose ps
+```
