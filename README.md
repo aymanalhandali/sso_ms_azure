@@ -1,7 +1,7 @@
 # sso_ms_azure
 ms azure sso configuration for any application in an organization
 
-
+see
 ## Deployment to EC2 instance (Ubuntu 24.04-amd64):
 - Instantiate instance in EC2 console - snap chat of my instance type
 ```
