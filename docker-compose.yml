@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      - FLASK_SECRET_KEY=your-secret-key
+      - CLIENT_ID=your-client-id
+      - CLIENT_SECRET=your-client-secret
+      - TENANT_ID=your-tenant-id
+      - REDIRECT_URI=http://localhost:5000/getAToken
+    ports:
+      - "5000:5000"
+      
+  frontend:
+    build:
+      context: ./frontend
+    environment:
+      - REACT_APP_CLIENT_ID=your-client-id
+      - REACT_APP_TENANT_ID=your-tenant-id
+      - REACT_APP_REDIRECT_URI=http://localhost:3000
+    ports:
+      - "3000:3000"
