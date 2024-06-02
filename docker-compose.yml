@@ -12,7 +12,7 @@ services:
       - REDIRECT_URI=http://localhost:5000/getAToken
     ports:
       - "5000:5000"
-      
+
   frontend:
     build:
       context: ./frontend
