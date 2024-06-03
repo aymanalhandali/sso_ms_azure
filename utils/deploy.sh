@@ -38,10 +38,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 # Check Docker Compose version
 docker-compose --version
 
-# Navigate to the directory containing your docker-compose.yml
-# Replace /path/to/your/project with the actual path
-cd /path/to/your/project
-
 # Build and run the Docker containers
 docker-compose up --build
 

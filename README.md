@@ -2,7 +2,12 @@
 ms azure sso configuration for any application in an organization
 
 ## Deployment to EC2 instance (Ubuntu 24.04-amd64):
-You can bypass steps below by running the Dockerfile or deploy.sh the below by
+You can bypass steps below by running the
+Dockerfile (assuming Docker is already installed)
+or deploy.sh
+
+* Steps:
+
 - Instantiate instance in EC2 console - snap chat of my instance type
 ```
 ubuntu-noble-24.04-amd64-server-20240423
@@ -71,3 +76,6 @@ docker-compose up --build
 - check on container
 ```docker-compose ps
 ```
+
+# Deploy EC2 using github workflow
+WIP
